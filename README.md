@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Monte Carlo Simulation Playground
 
-## Getting Started
+This project is a showcase for my Google Summer of Code (GSoC) application with [`stdlib`](https://github.com/stdlib-js/stdlib).
 
-First, run the development server:
+## Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The Monte Carlo Simulation Playground is an interactive tool built to demonstrate the power and versatility of Monte Carlo methods. It serves as both an educational resource and a technical demo of how `stdlib` can be used in simulations and statistical computation.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Two simulation modules implemented:**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+  - **Gambler's Ruin** – Visualize the classic probability problem involving wins, losses, and ruin.
+  - **Pi Estimator** – Estimate the value of π using random sampling.
 
-## Learn More
+- **Powered by [`stdlib`](https://github.com/stdlib-js/stdlib):**
 
-To learn more about Next.js, take a look at the following resources:
+  - Uses `@stdlib/random/base/uniform` for precise and reproducible random sampling.
+  - Applies `@stdlib/stats/mean` and `@stdlib/stats/variance` to calculate average and variability in simulation steps.
+  - Leverages `@stdlib/math/base/special/log1p` to offer log-transformed insights on initial capital and goal amounts.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Real-time Visualization:**
+  - Canvas-based rendering of sample paths across simulations.
+  - Slider-based parameter controls for instant feedback.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Tech Stack
 
-## Deploy on Vercel
+- `Next.js` + `React`
+- `TypeScript`
+- `Tailwind CSS`
+- `stdlib`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Feel free to explore the code and try out the simulations!
