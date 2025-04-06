@@ -69,7 +69,7 @@ const PiEstimatorPage: React.FC = () => {
                   id="iterations"
                   type="range"
                   min="100"
-                  max="1000000"
+                  max="100000"
                   step="100"
                   value={iterations}
                   onChange={(e) => setIterations(parseInt(e.target.value))}
@@ -78,7 +78,7 @@ const PiEstimatorPage: React.FC = () => {
                 />
                 <div className="flex justify-between text-xs text-gray-500 mt-1">
                   <span>100</span>
-                  <span>10,000</span>
+                  <span>100,000</span>
                 </div>
               </div>
 
