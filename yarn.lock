@@ -670,7 +670,7 @@
     "@stdlib/types" "^0.4.2"
     "@stdlib/utils" "^0.3.2"
 
-"@stdlib/stats@^0.3.2":
+"@stdlib/stats@^0.3.2", "@stdlib/stats@^0.3.3":
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/@stdlib/stats/-/stats-0.3.3.tgz#e0f17c0d73e3f5b0d019276b3348c8ca9e07c093"
   integrity sha512-prq0KD/Nc+VRsuuD82L8HSmmJNhroNLVc9DPHZ21e8spQurSx0SUoiScyTbZ6muMITUl0ont4AE1Ql2VoB84eQ==

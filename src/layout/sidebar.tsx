@@ -1,13 +1,8 @@
 "use client";
 
+import { modules } from "@/modules";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
-const modules = [
-  { id: "pi", name: "Estimate Pi" },
-  { id: "gambler", name: "Gambler's Ruin" },
-  { id: "coin", name: "Coin Toss" },
-];
 
 export default function Sidebar() {
   const pathname = usePathname();
